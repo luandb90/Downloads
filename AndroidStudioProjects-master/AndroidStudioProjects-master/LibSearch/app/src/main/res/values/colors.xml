@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d5d5d7</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#303F9F</color>
+    <color name="bemvindo">#e6e6e8</color>
+    <color name="preto">#000000</color>
+    <color name="login">#ffffff</color>
+    <color name="criarconta">#d5d5d7</color>
+    <color name="pink">#dc13a0</color>
+    <color name="yello">#fdd835</color>
+
+    <color name="darkgray">#333334</color>
+    <color name="lightgray">#9a999b</color>
+    <color name="purple">#931cc6</color>
+
+
+
+</resources>

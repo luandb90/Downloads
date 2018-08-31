@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colormeioameio"
+android:orientation="vertical"
+tools:context="com.example.luandbrito.projetolibsearchnovo.Historia_Primeiro_Activity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="296dp"
+    android:background="@color/colormeioameio"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_back_24dp"
+        android:onClick="home"/>
+
+    <TextView
+        android:id="@+id/livro_historia_primeiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="História - Vol. 1 - Ensino Médio."
+        android:textColor="@color/colorblack"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagem_historia_primeira"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="-350dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/historia" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Preco_historia_primeiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="R$ 124,90"
+            android:textColor="@color/colorblack"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp" />
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    >
+
+    <TextView
+        android:id="@+id/historia_descricao_primeiro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorblack"
+        android:textSize="25dp"
+        android:text="
+
+ Autor: Vainfas, Ronaldo
+------------------------------------------------------
+
+ Quantidade de Páginas :  144.
+------------------------------------------------------
+"/>
+
+
+
+
+
+</LinearLayout>
+</LinearLayout>

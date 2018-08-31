@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorAccent"
+    tools:context="com.example.luandbrito.myapplibsearch.SplashActivity">
+
+
+        
+    <ImageView
+
+        android:layout_width="500dp"
+        android:layout_height="600dp"
+        android:src="@drawable/logo"/>
+
+
+
+
+</LinearLayout>

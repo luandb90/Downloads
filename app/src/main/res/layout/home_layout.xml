@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="8dp"
+tools:context="com.example.luandbrito.projetolibsearchnovo.HomeActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1º Ano"
+        android:textColor="@color/colorblack"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colormeioameio"
+        android:layout_marginBottom="20dp"
+        android:onClick="biologia"
+        >
+
+
+        <ImageView
+            android:id="@+id/imagem_biologia_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/biologia"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_biologia_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biologia Das Células - 1ª Série."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_biologia_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 206,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="espanhol">
+
+
+        <ImageView
+            android:id="@+id/imagem_espanhol_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/espanhol"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_espanhol_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Español Para El Mundo 1B."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_espanhol_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 145,00"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="fisica">
+
+
+        <ImageView
+            android:id="@+id/imagem_fisica_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/fisica"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_fisica_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fisica  Os Fundamentos da Física."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_fisica_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 206,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="geografia">
+
+
+        <ImageView
+            android:id="@+id/imagem_geografia_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/geografia"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_geografia_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geografia Geral e do Brasil..."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_geografia_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 200,00"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="historia">
+
+
+        <ImageView
+            android:id="@+id/imagem_historia_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/historia"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_historia_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="História - Vol. 1 - Ensino Médio."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_historia_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 124,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="ingles">
+
+
+        <ImageView
+            android:id="@+id/imagem_ingles_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ingles"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_ingles_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Access 1 - Students Book."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_ingles_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 140,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="linhas">
+
+
+        <ImageView
+            android:id="@+id/imagem_linhas_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/linhas"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_linhas_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entre Linhas e Pontos ..."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_linhas_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 170,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="matematica">
+
+
+        <ImageView
+            android:id="@+id/imagem_matematica_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/matematica"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_matematica_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matemática Ciência e Aplicações - Vol. 1."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_matematica_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 152,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="portugues">
+
+
+        <ImageView
+            android:id="@+id/imagem_portugues_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/portugues"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_portugues_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Português - Contexto , Interlocução e Sentido."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_portugues_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 171,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="quimica">
+
+
+        <ImageView
+            android:id="@+id/imagem_quimica_primeira"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/quimica"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_quimica_primeiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Química na Abordagem do Cotidiano."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_quimica_primeiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 169,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2º Ano"
+        android:textColor="@color/colorblack"
+        android:textSize="35dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="biologiasegundo">
+
+
+        <ImageView
+            android:id="@+id/imagem_biologia_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/biologiasegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_biologia_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moderna Plus - Biologia Dos Organismos."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_biologia_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 191,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="espanholsegundo">
+
+
+        <ImageView
+            android:id="@+id/imagem_espanhol_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/espanholsegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_espanhol_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Redes 2 - Libro Del Alumno - Ensino Médio."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_espanhol_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 86,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="fisicasegundo">
+
+
+        <ImageView
+            android:id="@+id/imagem_fisica_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/fisicasegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_fisica_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Os Fundamentos da Física - Vol. 2."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_fisica_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 179,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="geografiasegundo">
+
+
+        <ImageView
+            android:id="@+id/imagem_geografia_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/geografiasegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_geografia_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geografia - Vol. 2 - Ensino Médio."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_geografia_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 119,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="geometriasegundo">
+
+
+        <ImageView
+            android:id="@+id/imagem_geometria_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/geometriasegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_geometria_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geometria Espacial - 2."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_geometria_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 61,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="historiasegundo">
+
+
+        <ImageView
+            android:id="@+id/imagem_historia_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/historiasegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_historia_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conecte - História - Vol. 2."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_historia_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 151,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="inglessegundo">
+
+
+        <ImageView
+            android:id="@+id/imagem_ingles_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/inglessegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_ingles_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Turn - Vol. 2."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_ingles_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 109,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="matematicasegunda">
+
+
+        <ImageView
+            android:id="@+id/imagem_matematica_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/matematicasegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_matematica_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projeto Multiplo - Matemática - Vol. 2."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_matematica_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 167,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="portuguessegundo">
+
+
+        <ImageView
+            android:id="@+id/imagem_portugues_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/portuguessegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_portugues_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Português Contemporâneo - 2º Ano."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_portugues_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 213,00"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="quimicasegundo">
+
+
+        <ImageView
+            android:id="@+id/imagem_quimica_segundo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/quimicasegundo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_quimica_segundo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projeto Múltiplo - Química - Vol. 2."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_quimica_segundo"
+                android:layout_marginTop="5dp"
+                android:text="R$ 165,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3º Ano"
+        android:textColor="@color/colorblack"
+        android:textSize="35dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="biologiaterceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_biologia_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/biologiaterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_biologia_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biologia - Ensino Médio - Vol. 3."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_biologia_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 100,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="espanholterceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_espanol_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/espanholterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_espanhol_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diversidad - Lengua Y Literatura - Vol. 3."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_espanhol_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 98,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="fisicaterceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_fisica_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/fisicaterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_fisica_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tópicos de Física - Vol. 3."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_fisica_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 173,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="geografiaterceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_geografia_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/geografiaterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_geografia_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geografia Geral e do Brasil - Vol. 3."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_geografia_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 132,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="geometriaterceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_geometria_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/geometriaterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_geometria_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geometria Espacial - Vol. 3."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_geometria_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 54,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="historisterceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_historia_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/historiaterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_historia_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conecte - História - Vol. 3."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_historia_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 160,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="inglestcerceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_ingles_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/inglesterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_ingles_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Access 3 - Students Book."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_ingles_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 145,00"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="matematicaterceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_matematica_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/matematicaterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_matematica_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conecte - Matemática - Vol. 3."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_matematica_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 167,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="portuguesterceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_portugues_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/portuguesterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_portugues_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Português Contemporâneo - 3º Ano."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_portugues_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 213,00"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colormeioameio"
+        android:onClick="quimicaterceiro">
+
+
+        <ImageView
+            android:id="@+id/imagem_quimica_terceiro"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/quimicaterceiro"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/livro_quimica_terceiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Química - Vol. 3."
+                android:textSize="22sp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:id="@+id/Preco_quimica_terceiro"
+                android:layout_marginTop="5dp"
+                android:text="R$ 153,90"
+                android:textColor="@color/colorblack"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

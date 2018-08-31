@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\e5b4f76a8c29a734eb13806dde5a677c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d277b5747712258fba773bf1539de1ca\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\40493e3e02bb9912b81d4357985fb9e2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\207ccab415ca80ac69e10c8894f8050d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\34fa75a31c2a09c9a3e320f11245e88e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\589d88831c1a86493dc794c7598d7bb7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\c1425d550958084ed81653b4df1a7945\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\576a32e4025770c0d9e1cbf87181534b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\ff94c0915102a028bfd547a1ecec64c3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\da79b361b11f14ab0691fb73a6de7d25\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0fde9d3972651173b0bc971f2326c4bb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7de9475482e047ef6f56fc3deb93af37\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:5:5-23:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d277b5747712258fba773bf1539de1ca\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d277b5747712258fba773bf1539de1ca\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:11:9-40
+activity#br.senac.sp.l13.homelogin.CadastroActivity
+ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:12:9-14:20
+	android:name
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:12:19-51
+activity#br.senac.sp.l13.homelogin.Cadastro_Activity
+ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:15:19-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\e5b4f76a8c29a734eb13806dde5a677c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\e5b4f76a8c29a734eb13806dde5a677c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d277b5747712258fba773bf1539de1ca\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\d277b5747712258fba773bf1539de1ca\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\40493e3e02bb9912b81d4357985fb9e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\40493e3e02bb9912b81d4357985fb9e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\207ccab415ca80ac69e10c8894f8050d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\207ccab415ca80ac69e10c8894f8050d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\34fa75a31c2a09c9a3e320f11245e88e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\34fa75a31c2a09c9a3e320f11245e88e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\589d88831c1a86493dc794c7598d7bb7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\589d88831c1a86493dc794c7598d7bb7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\c1425d550958084ed81653b4df1a7945\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\c1425d550958084ed81653b4df1a7945\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\576a32e4025770c0d9e1cbf87181534b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\576a32e4025770c0d9e1cbf87181534b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\ff94c0915102a028bfd547a1ecec64c3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\ff94c0915102a028bfd547a1ecec64c3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\da79b361b11f14ab0691fb73a6de7d25\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\da79b361b11f14ab0691fb73a6de7d25\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0fde9d3972651173b0bc971f2326c4bb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0fde9d3972651173b0bc971f2326c4bb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7de9475482e047ef6f56fc3deb93af37\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\luan.dbrito\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7de9475482e047ef6f56fc3deb93af37\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\luan.dbrito\Downloads\HomeLogin-master-20180829T163638Z-001\HomeLogin-master\HomeLogin-master\app\src\main\AndroidManifest.xml

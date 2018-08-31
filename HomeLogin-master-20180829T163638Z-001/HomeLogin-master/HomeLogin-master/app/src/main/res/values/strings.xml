@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HomeLogin</string>
+    <string name="password">password</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="skype">Skype</string>
+    <string name="web">Web</string>
+</resources>

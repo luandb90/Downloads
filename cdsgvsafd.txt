@@ -1,0 +1,638 @@
+AndroidManifest
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luandbrito.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AnimeActivity"></activity>
+    </application>
+
+</manifest>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Anime.java
+
+package com.example.luandbrito.myapp;
+
+
+
+public class Anime {
+
+    private String name;
+    private String Description;
+    private String rating;
+    private int nb_episode;
+    private String categorie;
+    private String studio;
+    private String image_url;
+
+    public Anime() {
+    }
+
+    public Anime(String name, String description, String rating, int nb_episode, String categorie, String studio, String image_url) {
+        this.name = name;
+        Description = description;
+        this.rating = rating;
+        this.nb_episode = nb_episode;
+        this.categorie = categorie;
+        this.studio = studio;
+        this.image_url = image_url;
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public int getNb_episode() {
+        return nb_episode;
+    }
+
+    public String getCategorie() {
+        return categorie;
+    }
+
+    public String getStudio() {
+        return studio;
+    }
+
+    public String getImage_url() {
+        return image_url;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    public void setNb_episode(int nb_episode) {
+        this.nb_episode = nb_episode;
+    }
+
+    public void setCategorie(String categorie) {
+        this.categorie = categorie;
+    }
+
+    public void setStudio(String studio) {
+        this.studio = studio;
+    }
+
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MainActivity.java
+
+
+package com.example.luandbrito.myapp;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+
+    private final String JSON_URL ="https://gist.githubusercontent.com/aws1994/f583d54e5af8e56173492d3f60dd5ebf/raw/c7796ba51d5a0d37fc756cf0fd14e54434c547bc/anime.json";
+    private JsonArrayRequest request;
+    private RequestQueue requestQueue;
+    private List<Anime> lstAnime;
+    private RecyclerView recyclerView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        lstAnime = new ArrayList<>();
+        recyclerView = findViewById(R.id.recyclerviewid);
+        jsonrequest();
+    }
+
+    private void jsonrequest() {
+
+        request = new JsonArrayRequest(JSON_URL, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                JSONObject jsonObject = null;
+
+                for (int i = 0; i < response.length(); i++) {
+                    try {
+                        jsonObject = response.getJSONObject(i);
+                        Anime anime = new Anime();
+                        anime.setName(jsonObject.getString("name"));
+                        anime.setDescription(jsonObject.getString("description"));
+                        anime.setRating(jsonObject.getString("Rating"));
+                        anime.setCategorie(jsonObject.getString("categorie"));
+                        anime.setNb_episode(jsonObject.getInt("episode"));
+                        anime.setStudio(jsonObject.getString("studio"));
+                        anime.setImage_url(jsonObject.getString("img"));
+                        lstAnime.add(anime);
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+                setuprecyclerview(lstAnime);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+            }
+        });
+        requestQueue = Volley.newRequestQueue(MainActivity.this);
+        requestQueue.add(request);
+    }
+    private void  setuprecyclerview(List<Anime> lstAnime) {
+
+        RecyclerViewAdapter myadapter = new RecyclerViewAdapter(  this, lstAnime);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        recyclerView.setAdapter(myadapter);
+
+    }
+
+    }
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AnimeActivity.java
+
+package com.example.luandbrito.myapp;
+
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
+public class AnimeActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_anime);
+
+        //Escondendo o actionBar default
+
+        getSupportActionBar() .hide();
+
+        //Recuperando dados
+
+        String name = getIntent().getExtras()
+                .getString("anime_name");
+        String description = getIntent().getExtras()
+                .getString("anime_description");
+        String studio = getIntent().getExtras()
+                .getString("anime_studio");
+        String category = getIntent().getExtras()
+                .getString("anime_category");
+        String rating = getIntent().getExtras()
+                .getString("anime_rating");
+        int nd_episode = getIntent().getExtras()
+                .getInt("anime_nd_episode");
+        String image_url = getIntent().getExtras()
+                .getString("anime_img");
+
+        //Iniciando as views
+
+        CollapsingToolbarLayout collapsingToolbarLayout =
+                findViewById((R.id.collapsingtoolbar_id));
+
+        collapsingToolbarLayout.setTitleEnabled(true);
+
+        TextView tv_name= findViewById((R.id.aa_anime_name));
+        TextView tv_studio= findViewById((R.id.aa_studio));
+        TextView tv_category= findViewById((R.id.aa_categoria));
+        TextView tv_description= findViewById((R.id.aa_description));
+        TextView tv_rating= findViewById((R.id.aa_rating));
+        ImageView img= findViewById((R.id.aa_thumbnail));
+        //setando valores para as views
+        tv_name.setText(name);
+        tv_studio.setText(studio);
+        tv_category.setText(category);
+        tv_description.setText(description);
+        tv_rating.setText(rating);
+
+
+        collapsingToolbarLayout.setTitle(name);
+
+        RequestOptions resquestOption = new RequestOptions().centerCrop().placeholder
+                (R.drawable.loading_shape).error(R.drawable.loading_shape);
+
+        //setando imagem usado o Glide
+
+        Glide.with(this).load(image_url).
+                apply(resquestOption).into(img);
+
+
+
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RecyclerViewAdapter.java
+
+package com.example.luandbrito.myapp;
+
+
+import android.content.Context;
+import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
+import java.util.List;
+
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+
+    private Context myContext;
+    private List<Anime>mData;
+    RequestOptions option;
+
+
+public RecyclerViewAdapter(Context myContext, List<Anime> mData){
+    this.myContext = myContext;
+    this.mData = mData;
+
+    //Requerindo option para Glide
+
+
+    option = new RequestOptions().centerCrop()
+            .placeholder(R.drawable.loading_shape)
+            .error(R.drawable.loading_shape);
+
+
+}
+
+    @NonNull
+    @Override
+    public RecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+        View view;
+
+        LayoutInflater inflater = LayoutInflater.from(myContext);
+
+        view = inflater.inflate(R.layout.anime_row_item, parent, false);
+        final MyViewHolder viewHolder = new MyViewHolder(view);
+        viewHolder.view_container.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(myContext, AnimeActivity.class);
+                i.putExtra("anime_name",
+                        mData.get(viewHolder.getAdapterPosition()).getName());
+                i.putExtra("anime_description",
+                        mData.get(viewHolder.getAdapterPosition()).getDescription());
+                i.putExtra("anime_studio",
+                        mData.get(viewHolder.getAdapterPosition()).getStudio());
+                i.putExtra("anime_category",
+                        mData.get(viewHolder.getAdapterPosition()).getCategorie());
+                i.putExtra("anime_nb_episode",
+                        mData.get(viewHolder.getAdapterPosition()).getNb_episode());
+                i.putExtra("anime_rating",
+                        mData.get(viewHolder.getAdapterPosition()).getRating());
+                i.putExtra("anime_img",
+                        mData.get(viewHolder.getAdapterPosition()).getImage_url());
+
+                myContext.startActivity(i);
+            }
+        });
+
+        return viewHolder;
+
+    }
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerViewAdapter.MyViewHolder holder, int position) {
+
+        holder.tv_name.setText(mData.get(position).getName());
+        holder.tv_rating.setText(mData.get(position).getRating());
+        holder.tv_studio.setText(mData.get(position).getStudio());
+        holder.tv_category.setText(mData.get(position).getCategorie());
+
+
+        Glide.with(myContext).load(mData.get(position)
+                .getImage_url()).apply(option)
+                .into(holder.img_thumbnail);
+
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+
+        TextView tv_name;
+        TextView tv_rating;
+        TextView tv_studio;
+        TextView tv_category;
+        ImageView img_thumbnail;
+        LinearLayout view_container;
+
+
+
+        public MyViewHolder(View itemView) {
+            super(itemView);
+
+            view_container = itemView.findViewById(R.id.container);
+            tv_name = itemView.findViewById(R.id.anime_name);
+            tv_rating = itemView.findViewById(R.id.rating);
+            tv_studio = itemView.findViewById(R.id.studio);
+            tv_category = itemView.findViewById(R.id.categorie);
+            img_thumbnail = itemView.findViewById(R.id.thumbnail);
+
+
+
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+activity_anime
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luandbrito.myapp.AnimeActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/appbarlayout_id">
+
+     <android.support.design.widget.CollapsingToolbarLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/collapsingtoolbar_id"
+         app:contentScrim="@color/colorPrimary"
+         app:expandedTitleMarginEnd="64dp"
+         app:expandedTitleMarginStart="48dp"
+         app:layout_scrollFlags="exitUntilCollapsed|scroll"
+         app:title="Anime Title">
+
+      <android.support.v7.widget.Toolbar
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:theme="@style/Base.ThemeOverlay.AppCompat.Light"
+          app:layout_collapseMode="pin">
+      </android.support.v7.widget.Toolbar>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="50dp">
+
+      <ImageView
+          android:id="@+id/aa_thumbnail"
+          android:layout_width="100dp"
+          android:layout_height="match_parent"
+          android:background="@drawable/loading_shape"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="130dp"
+          android:layout_margin="8dp"
+          android:orientation="vertical">
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/aa_anime_name"
+          android:text="Anime Title"
+          android:textSize="18sp"
+          android:textStyle="bold"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/aa_categoria"
+              android:layout_marginTop="10dp"
+              android:text="Category" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/aa_rating"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/rating_background"
+              android:drawableLeft="@drawable/ic_star_black_24dp"
+              android:text="0.0"
+              android:textColor="#FFF"
+              android:textSize="15sp"
+              android:textStyle="bold"/>
+
+          <TextView
+              android:id="@+id/aa_studio"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:text="Studio"/>
+
+
+      </LinearLayout>
+      </LinearLayout>
+     </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/aa_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Anime Description"/>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+activity_anime
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luandbrito.myapp.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/recyclerviewid">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+anime_row_item
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="5dp"
+    android:background="#FFF"
+    android:padding="8dp"
+    android:id="@+id/container"
+    >
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/loading_shape"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anime Title"
+        android:id="@+id/anime_name"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categorie"
+        android:layout_marginTop="5dp"
+        android:text="Category"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rating_background"
+        android:drawableLeft="@drawable/ic_star_black_24dp"
+        android:text="0.0"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/studio"
+        android:layout_marginTop="5dp"
+        android:text="Studio"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ic_star_black_24dp
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+    <path
+        android:fillColor="#d6b41d"
+        android:pathData="M12,17.27L18.18,21l-1.64,-7.03L22,9.24l-7.19,-0.61L12,2 9.19,8.63 2,9.24l5.46,4.73L5.82,21z"/>
+</vector>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+rating_background
+
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/colorPrimary"/>
+    <corners android:radius="5dp" />
+
+</shape>
